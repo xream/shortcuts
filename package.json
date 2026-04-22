@@ -1,0 +1,18 @@
+{
+  "name": "shortcuts-workspace",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.13",
+  "engines": {
+    "bun": "1.3.13"
+  },
+  "scripts": {
+    "build": "bun run build:github-uploader",
+    "build:github-uploader": "bun run github-uploader/build.js",
+    "build:github-uploader:unsigned": "bun run github-uploader/build.js --unsigned-only",
+    "sign": "bun run sign:github-uploader",
+    "sign:github-uploader": "bun run github-uploader/build.js --sign-only",
+    "verify": "bun run verify:github-uploader",
+    "verify:github-uploader": "bun run github-uploader/build.js --verify"
+  }
+}

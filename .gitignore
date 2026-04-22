@@ -137,3 +137,9 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+__pycache__
+.build
+CODEMAP.md
+CONTEXT_BUNDLE.md
+mydocs
